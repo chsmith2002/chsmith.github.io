@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="description" content="This is an overview of how to create a dashboard to present data in Google Sheets"><title>Creating a Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"></head><body id="task-1055"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!--
+  <div class="container">
+
+    <a class="navbar-brand" href="/">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-bootstrap"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"
+        />
+        <path
+          d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"
+        />
+      </svg>
+      DITA Bootstrap
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"/>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link One</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link Three</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  -->
+</nav></header></div><div class="bs-container" id="content"><nav role="navigation" class="bs-sidebar-nav" id="bs-sidebar-nav"><ul><li><a href="../Intro_To_Topic/Guide_to_Creating_a_Workout_Tracker_Using_Google_Sheets_and_Google_Forms.html">Guide to Creating a Workout Tracker</a></li><li><a href="../Intro_To_Topic/About_Google_Sheets.html">About Google Sheets</a></li><li><a href="../Intro_To_Topic/About_Google_Forms.html">About Google Forms</a></li><li><a href="../Intro_To_Topic/Automating_Google_Sheets_Using_a_Form.html">Tracking Workouts With Google Apps</a><ul><li><a href="../Creating_and_Automating_Form/Creating_a_Google_Form.html">Creating a Google Form</a></li><li><a href="../Creating_and_Automating_Form/Linking_a_Form_to_Sheets.html">Linking a Form to Sheets</a></li><li class="active"><a href="../Creating_and_Automating_Form/Creating_a_Dashboard.html">Creating a Dashboard</a></li></ul></li></ul></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title text-dark" id="ariaid-title1">Creating a Dashboard</h1><div class="body taskbody"><p class="shortdesc text-muted lead">This is an overview of how to create a dashboard to present data in Google Sheets</p><section class="section context">Once your form and your sheet are created and linked, you can now create a dashboard to visualize your data.</section><section><ol class="ol steps"><li class="li step"><span class="ph cmd">On the bottom of the Exercise Tracker Sheet, rename "Sheet1" to "Dashboard"</span></li><li class="li step"><span class="ph cmd">Create a header for the chart on the sheet titled "Dashboard":</span><ol type="a" class="ol substeps"><li class="li substep"><span class="ph cmd">Merge cells D1:F1</span></li><li class="li substep"><span class="ph cmd">Title the selection as "Strength Training Progress"</span></li><li class="li substep"><span class="ph cmd">Center the text vertically and horizontally</span></li><li class="li substep"><span class="ph cmd">Change the font size to 17 and bold the text</span></li><li class="li substep"><span class="ph cmd">Set the background color of the selection to light blue</span></li><li class="li substep"><span class="ph cmd">Under the "View" tab, locate "Show" and deselect "Gridlines"</span></li></ol></li><li class="li step"><span class="ph cmd">Select columns <strong class="ph b">Date</strong> and <strong class="ph b">Max Weight</strong> on the "Form Responses 1" sheet by using cmd + left click</span></li><li class="li step"><span class="ph cmd">Under the <strong class="ph b">Insert</strong> tab, select <strong class="ph b">Chart</strong></span></li><li class="li step"><span class="ph cmd">Under the <strong class="ph b">Chart Editor</strong> select <strong class="ph b">Column Chart</strong></span></li><li class="li step"><span class="ph cmd">Double-click on the chart title and rename the chart "Bench Press Strength Progress"</span></li><li class="li step"><span class="ph cmd">Copy the chart and paste it in the "Dashboard" sheet, underneath the header</span></li><li class="li step"><div role="alert" class="note alert alert-info"><span class="note__title">Note:</span> This process can be repeated for any exercise or criteria for progress that is desired.</div><span class="ph cmd"></span><br></li></ol></section><section class="section result">Congratulations! You have now created a  dashboard and a chart to represent your data set. Feel free to adjust the coloring, wording, or format where you see fit. Here is a look at an example finalized dashboard:<figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" src="../Reusable_Content/Images/chart.jpg" alt="Image of a final Dashboard with example chart"><figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>Finalized Dashboard Example</figcaption></figure>
+ </section></div><nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../Intro_To_Topic/Automating_Google_Sheets_Using_a_Form.html" title="An overview of Tracking Workouts using Google Sheets and Google Forms">Tracking Workouts With Google Apps</a></div></div></nav></article></main></div></body></html>
